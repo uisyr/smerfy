@@ -3,16 +3,16 @@ using namespace std;
 
 class smerf
 {
-		public:
-			int x;
-			int y;
+	public:
+		int x;
+		int y;
 }
 class klakier
 {
-		public:
-			int x;
-			int y;
-			int range;
+	public:
+		int x;
+		int y;
+		int range;
 }
 class Gargamel 
 {
