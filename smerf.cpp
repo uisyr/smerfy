@@ -1,7 +1,7 @@
  #include <iostream>
  #include <cstdlib>
 using namespace std;
-
+int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky, int gr, int kr);
  class smerf
  {
  public:
