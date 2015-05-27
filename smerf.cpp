@@ -1,25 +1,26 @@
-#include <iostream>
-#include <cstdlib>
-#include<math.h>
+ #include <iostream>
+ #include <cstdlib>
+ #include<math.h>
 using namespace std;
 int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky, int gr, int kr);
- 
-class smerf
-{
-	public:
-		int x;
-		int y;
-		int state = 1;
-		void create(int xp, int yp);
-};
+
+ class smerf
+ {
+ public:
+	int x;
+	int y;
+	int state = 1;
+	void create(int xp, int yp);
+     
+  };
 void smerf::create(int xp, int yp)
-{
+ {
  	x = xp;
    	y = yp;
-}
+ }
 
 class evil
-{
+ {
 public:
 int x;
  int y;
@@ -32,7 +33,7 @@ void evil::create(int xp, int yp, int rangep)
 	y = yp;
 	range = rangep;
 }
- 
+     
 int main()
 {
  	smerf tab[10];
@@ -44,11 +45,11 @@ int main()
 }
 	evil Gargamel;
 	evil Klakier;
-	Gargamel.create(rand()%100,rand()%100,10);
-	Klakier.create(rand()%100,rand()%100,8);
+	Gargamel.create(rand()%100,rand()%100,5);
+	Klakier.create(rand()%100,rand()%100,3);
 	for(i=0;i<30;i++)
 	{
-		for(j=0;j<5;j++)
+		for(j=0;j<10;j++)
 		{
 			if(tab[j].state==1)
 			{
@@ -56,13 +57,15 @@ int main()
 				{
 					tab[j].state=0;
 					k++;
+					tab[j].x=rand()%100;
+					tab[j].y=rand()%100;
 				}
 			}
-		}
+		}		
 	}
 	cout<<"Gargamel i Klakier złapali"<<k<<" smerfów"<<"\n";
 }
- 
+
 int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky, int gr, int kr)
 {
 	if(sqrt((sx-gx)*(sx-gx)+(sy-gy)*(sy-gy))>gr&&sqrt((sx-kx)*(sx-kx)+(sy-ky)*(sy-ky))>kr)
