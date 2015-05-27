@@ -1,26 +1,25 @@
- #include <iostream>
- #include <cstdlib>
- #include<math.h>
+#include <iostream>
+#include <cstdlib>
+#include<math.h>
 using namespace std;
 int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky, int gr, int kr);
  
- class smerf
- {
- public:
-	int x;
-	int y;
-	int state = 1;
-	void create(int xp, int yp);
- 
-  };
+class smerf
+{
+	public:
+		int x;
+		int y;
+		int state = 1;
+		void create(int xp, int yp);
+};
 void smerf::create(int xp, int yp)
- {
+{
  	x = xp;
    	y = yp;
- }
- 
+}
+
 class evil
- {
+{
 public:
 int x;
  int y;
