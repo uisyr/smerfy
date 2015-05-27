@@ -44,3 +44,15 @@ int main()
 	Gargamel.create(rand()%100,rand()%100,5);
 	Klakier.create(rand()%100,rand()%100,3);
 }
+
+int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky)
+{
+	if(sqrt((sx-gx)*(sx-gx)+(sy-gy)*(sy-gy))>2||sqrt((sx-kx)*(sx-kx)+(sy-ky)*(sy-ky))>1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
