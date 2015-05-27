@@ -45,9 +45,9 @@ int main()
 	Klakier.create(rand()%100,rand()%100,3);
 }
 
-int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky)
+int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky, int gr, int kr)
 {
-	if(sqrt((sx-gx)*(sx-gx)+(sy-gy)*(sy-gy))>2||sqrt((sx-kx)*(sx-kx)+(sy-ky)*(sy-ky))>1)
+	if(sqrt((sx-gx)*(sx-gx)+(sy-gy)*(sy-gy))>gr||sqrt((sx-kx)*(sx-kx)+(sy-ky)*(sy-ky))>kr)
 	{
 		return 1;
 	}
