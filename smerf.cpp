@@ -15,14 +15,8 @@ void smerf::create(int xp, int yp)
  	x = xp;
    	y = yp;
  }
-class klakier
-{
-public:
- int x;
-int y;
-int range;
-};
-class Gargamel 
+
+class evil
  {
 public:
 int x;
