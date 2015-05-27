@@ -61,12 +61,12 @@ int main()
 			}
 		}
 	}
-	cout<<"Gargamel i Klakier złapali"<<k<<" smerfów"<<"\n";
+	cout<<"Gargamel i Klakier złapali "<<k<<" smerfów"<<"\n";
 }
 
 int sprawdzam(int sx, int sy, int gx, int gy, int kx, int ky, int gr, int kr)
 {
-	if(sqrt((sx-gx)*(sx-gx)+(sy-gy)*(sy-gy))>gr||sqrt((sx-kx)*(sx-kx)+(sy-ky)*(sy-ky))>kr)
+	if(sqrt((sx-gx)*(sx-gx)+(sy-gy)*(sy-gy))>gr&&sqrt((sx-kx)*(sx-kx)+(sy-ky)*(sy-ky))>kr)
 	{
 		return 1;
 	}
