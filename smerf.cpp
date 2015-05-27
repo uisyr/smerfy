@@ -22,7 +22,14 @@ public:
 int x;
  int y;
  int range;
+ void create(int xp, int yp, int rangep);
 };
+void evil::create(int xp, int yp, int rangep)
+{
+	x = xp;
+	y = yp;
+	range = rangep;
+}
      
 int main()
 {
@@ -32,8 +39,8 @@ int main()
 {
    		tab[i].create((rand()%100),(rand()%100));
 }
-	for(i=0;i<10;i++)
-	{
-		cout<<tab[i].x<<"\t"<<tab[i].y<<"\n";
-	}
+	evil Gargamel;
+	evil Klakier;
+	Gargamel.create(rand()%100,rand()%100,5);
+	Klakier.create(rand()%100,rand()%100,3);
 }
